@@ -10,9 +10,14 @@ import AppButton from "./app/components/AppButton";
 import Card from "./app/components/Card";
 import ListingDetailsScreen from "./app/screens/ListingDetailsScreen";
 import MessagesScreen from "./app/screens/MessagesScreen";
+import BaseView from "./app/components/BaseView";
+import Icon from "./app/components/Icon";
+import ListItem from "./app/components/ListItem";
+import AccountSceen from "./app/screens/AccountSceen";
+import ListingsScreen from "./app/screens/ListingsScreen";
 
 export default function App() {
-  return <MessagesScreen />;
+  return <ListingsScreen />;
 }
 
 const styles = StyleSheet.create({
