@@ -1,5 +1,12 @@
-import React from "react";
-import { View, StyleSheet, Platform, StatusBar } from "react-native";
+import React, { useState } from "react";
+import {
+  View,
+  StyleSheet,
+  Platform,
+  StatusBar,
+  TextInput,
+  Text,
+} from "react-native";
 import {
   useDimensions,
   useDeviceOrientation,
@@ -15,9 +22,16 @@ import Icon from "./app/components/Icon";
 import ListItem from "./app/components/ListItem";
 import AccountSceen from "./app/screens/AccountSceen";
 import ListingsScreen from "./app/screens/ListingsScreen";
+import AppTextInput from "./app/components/AppTextInput";
 
 export default function App() {
-  return <ListingsScreen />;
+  const [firstName, setFirstName] = useState("");
+
+  return (
+    <BaseView>
+      <AppTextInput placeholder="Username" icon="email" />
+    </BaseView>
+  );
 }
 
 const styles = StyleSheet.create({
